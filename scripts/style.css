@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  background: #dfdfdf; }
+
+#main {
+  display: inline-block;
+  float: right;
+  height: 100%;
+  min-height: 100vh;
+  width: calc(100vw - 200px);
+  background: #ff7256; }
+  #main .chart-container {
+    background-color: white;
+    display: block;
+    min-height: calc(100vh - 89px);
+    width: -webkit-fit-content;
+    min-width: 100%; }
+  #main .row {
+    width: 100%; }
+  #main form.choices .form-group {
+    margin: 0 15px; }
+  #main form.choices select {
+    width: 200px; }
+  #main p.menu-buttons {
+    margin: 20px 0;
+    text-align: center; }
+    #main p.menu-buttons button {
+      width: 200px; }
+
+#sidebar {
+  position: fixed;
+  display: inline-block;
+  background: #043f77;
+  height: 100vh;
+  width: 200px; }
+  #sidebar ul {
+    margin-top: 30px;
+    padding: 0 20px; }
+  #sidebar ul li {
+    margin: 15px 0;
+    list-style: none;
+    width: 160px;
+    height: 50px;
+    text-align: center;
+    list-style-position: inside;
+    border: 2px solid white;
+    border-radius: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px; }
+    #sidebar ul li a {
+      color: #fff;
+      text-decoration: none; }
+    #sidebar ul li:hover {
+      background-color: #ff7256;
+      cursor: pointer; }
+
+.title {
+  text-align: center;
+  font-weight: 300; }
+
+#home {
+  min-height: calc(100vh - 89px) !important;
+  padding-top: 60px;
+  text-align: center; }
+  #home p.footnote {
+    text-align: right;
+    font-size: 70%;
+    margin-right: 20px;
+    margin-bottom: 0; }
+
+#home-example .bar {
+  fill: steelblue; }
+  #home-example .bar:hover {
+    fill: brown; }
+
+#home-example .axis text {
+  font: 10px sans-serif; }
+
+#home-example .axis path,
+#home-example .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges; }
+
+#home-example .x.axis path {
+  display: none; }
+
+#controller {
+  text-align: center;
+  padding: 15px 0; }
+
+#bar-chart-container {
+  margin-top: 30px;
+  text-align: center; }
+  #bar-chart-container .bar {
+    fill: steelblue; }
+    #bar-chart-container .bar:hover {
+      fill: brown; }
+  #bar-chart-container .axis text {
+    font: 10px sans-serif; }
+  #bar-chart-container .axis path,
+  #bar-chart-container .axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges; }
+  #bar-chart-container .x.axis path {
+    display: none; }
+
+#pie-chart-container {
+  margin-top: 30px;
+  text-align: center; }
+  #pie-chart-container .arc path {
+    stroke: #fff; }
+
+#scattered-chart-container {
+  margin-top: 30px;
+  text-align: center; }
+  #scattered-chart-container .axis path,
+  #scattered-chart-container .axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges; }
+  #scattered-chart-container .dot {
+    stroke: #000; }
+  #scattered-chart-container .detail {
+    position: absolute;
+    width: 200px;
+    height: 28px;
+    pointer-events: none; }

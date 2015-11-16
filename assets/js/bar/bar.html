@@ -1,0 +1,22 @@
+<h1 class="title">Bar Chart</h1>
+<br>
+<div class="chart-container container">
+	<section id="bar-chart-container">
+		<svg id="bar"></svg>
+	</section>
+	<form class="form-inline choices" ng-show="loaded" style="text-align: center;">
+	  <div class="form-group">
+		    <label for="data-field-x">x-axis</label>
+		    <select id="data-field-x" class="form-control" ng-options="field for field in fields" ng-model="xVar"></select>
+	  </div>
+	  <div class="form-group">
+		    <label for="data-field-y">y-axis</label>
+		    <select id="data-field-y" class="form-control" ng-options="field for field in fields" ng-model="yVar"></select>
+	  </div>
+	</form>
+	<p class="menu-buttons">
+		<button class="btn btn-primary btn-lg" ng-click="open()">Open</button>
+		<button class="btn btn-success btn-lg" ng-click="draw(xVar, yVar)">Draw</button>
+		<button class="btn btn-danger btn-lg" ng-click="clear()">Clear</button>
+	</p>
+</div>

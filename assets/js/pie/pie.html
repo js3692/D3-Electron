@@ -1,0 +1,18 @@
+<h1 class="title">Pie Chart</h1>
+<br>
+<div class="chart-container container">
+	<section id="pie-chart-container">
+		<svg id="pie"></svg>
+	</section>
+	<form class="form-inline choices" ng-show="loaded" style="text-align: center; margin-top: 15px;">
+	  <div class="form-group">
+	    <label for="data-field">Data set</label>
+	    <select id="data-field" class="form-control" ng-options="field for field in fields" ng-model="dataSet"></select>
+	  </div>
+	</form>
+	<p class="menu-buttons">
+		<button class="btn btn-primary btn-lg" ng-click="open()">Open</button>
+		<button class="btn btn-success btn-lg" ng-click="draw(dataSet)">Draw</button>
+		<button class="btn btn-danger btn-lg" ng-click="clear()">Clear</button>
+	</p>
+</div>

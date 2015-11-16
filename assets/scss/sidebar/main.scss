@@ -1,0 +1,32 @@
+#sidebar {
+	position: fixed;
+	display: inline-block;
+	background: #043f77;
+	height: 100vh;
+	width: 200px;
+
+	ul {
+		margin-top: 30px;
+		padding: 0 20px;
+	}
+	ul li {
+		margin: 15px 0;
+		list-style: none;
+		width: 160px;
+		height: 50px;
+	  text-align: center;
+	  list-style-position: inside;
+	  border: 2px solid white;
+	  border-radius: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+		a {
+			color: #fff;
+			text-decoration: none;
+		}
+		&:hover {
+			background-color: #ff7256;
+      cursor: pointer;
+		}
+	}
+}

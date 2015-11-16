@@ -1,0 +1,38 @@
+.title {
+	text-align: center;
+	font-weight: 300;
+}
+#home {
+	min-height: calc(100vh - 89px) !important;
+	padding-top: 60px;
+	text-align: center;
+	p.footnote {
+		text-align: right;
+		font-size: 70%;
+		margin-right: 20px;
+		margin-bottom: 0;
+	}
+}
+#home-example {
+	.bar {
+	  fill: steelblue;
+	  &:hover {
+	  	fill: brown;
+	  }
+	}
+
+	.axis text {
+	  font: 10px sans-serif;
+	}
+
+	.axis path,
+	.axis line {
+	  fill: none;
+	  stroke: #000;
+	  shape-rendering: crispEdges;
+	}
+
+	.x.axis path {
+	  display: none;
+	}
+}
