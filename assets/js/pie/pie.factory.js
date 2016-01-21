@@ -55,7 +55,10 @@ app.factory('Pie', function() {
 
 		g.append("path")
 			.attr("d", arc)
-			.style("fill", function(d) { return type(d.data[dataSet]); });
+			.style("fill", function (d) { return "#fff"; })
+			.transition()
+			.duration(500)
+			.style("fill", function (d) { return type(d.data[dataSet]); });
 
 		g.append("text")
 			.attr("transform", function(d) { return "translate(" + arc.centroid(d) + ")"; })
